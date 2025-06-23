@@ -1,106 +1,135 @@
-<title> Liste Pop </title>
+<title> Liste Pop Quentin </title>
 <!DOCTYPE html>
 
 <head>
+<link rel="stylesheet" href="style.css">
+
 <div id="main">
-   <font size=6> <p>Bienvenue sur la liste de mes Funko pop actuelles</p> </font>
-  
+   <font size=6> <p>Bienvenue sur la liste de mes Funko Pop </p> </font>
+ </div>
 <body>
  
+<div id="filter-bar">
+  <button onclick="filterPops('all')" style="background-image: url('disney.jpg')">Toutes</button>
+  <button onclick="filterPops('disney')">Disney</button>
+  <button onclick="filterPops('star wars')">Star Wars</button>
+  <button onclick="filterPops('loki')">Loki</button>
+  <button onclick="filterPops('rocks')">Rocks</button>
+  <button onclick="filterPops('games')">Games</button>
+  
+</div>
+
  
- <table BORDER="1">
-	 <tr>
-		 <td>
-		 <img src= "Anna.jpg" alt= "img" height="500" width="auto" />
-<p> Anna </p>	
-		 </td>
-		 <td>
-		 <img src= "Amiral Ackbar.jpg" alt= "img" height="500" width="auto" /> 
-		 <font size=6><p> Amiral Ackbar </p> </font>
-		 </td>
-		 <td>
-		 <img src= "Agatha.jpg" alt= "img" height="500" width="auto" />
-		 <font size=6> <p> Agatha Harkness </p> </font>
-		 </td>
-		 		 <td>
-		
-		 </td>
-	 </tr>
-	 	 <tr>
-		 		 <td>
-		 <div id="main">
-   
-		 </td>
-		 <td>
-		 
-		
-		 </td>
-		 <td>
-		 FTEST
-		 </td>
-	 </tr>
 
- </table>
-	
+		<!-- Bloc 1-->
+			<div class="pop" data-licence="disney">
+			<img src= "Anna.jpg" alt= "Anna" height="500" width="auto" />
+			<font size=6><p> Anna </p> </font>
+			</div>
+			
+			<!-- Bloc 2-->
+			<div class="pop" data-licence="star wars">
+			<img src= "Amiral Ackbar.jpg" alt= "img" height="500" width="auto" /> 
+			<font size=6><p> Amiral Ackbar </p> </font>
+			</div>
+			
+			<!-- Bloc 3-->
+			<div class="pop" data-licence="marvel">
+			<img src= "Agatha.jpg" alt= "img" height="500" width="auto" />
+			<font size=6> <p> Agatha Harkness </p> </font>
+			</div>
+			
+			<!-- Bloc 4-->
+			<div class="pop" data-licence="marvel">
+			<img src= "America Chavez.jpg" alt= "img" height="500" width="auto" />
+			<font size=6> <p> America Chavez </p> </font>
+			</div>
+			
+			<!-- Bloc 5-->
+			<div class="pop" data-licence="disney">
+			<img src= "Arthur.jpg" alt= "img" height="500" width="auto" />
+			<font size=6> <p> Arthur </p>  </font>
+			</div>
+			
+			<!-- Bloc 6-->
+			<div class="pop" data-licence="disney">
+			<img src= "Asha.jpg" alt= "img" height="500" width="auto" />
+			<font size=6> <p> Asha </p>  </font>
+			</div>
+			
+			<!-- Bloc 7-->
+			<div class="pop" data-licence="disney">
+			<img src= "Aurore.jpg" alt= "img" height="500" width="auto" />
+			<font size=6> <p> Aurore </p>  </font>
+			</div>
+
+	<div class="pop" data-licence="disney">   
+	<img src= "Aurore avec chateau.jpg" alt= "img" height="500" width="auto" />
+	<font size=6> <p> Aurore avec chateau </p>  </font>
+	</div>
 
 
 
-
-
-<font size=6> 
-
-
-
-<img src= "America Chavez.jpg" alt= "img" height="500" width="auto" />
-<p> America Chavez </p> 
-
-<img src= "Arthur.jpg" alt= "img" height="500" width="auto" />
-<p> Arthur </p> 
-
-<img src= "Asha.jpg" alt= "img" height="500" width="auto" />
-<p> Asha </p> 
-
-<img src= "Aurore.jpg" alt= "img" height="500" width="auto" />
-<p> Aurore </p> 
-
-<img src= "Aurore avec chateau.jpg" alt= "img" height="500" width="auto" />
-<p> Aurore avec chateau </p> 
-
+<div class="pop" data-licence="disney">
 <img src= "Baloo et mowgli.jpg" alt= "img" height="500" width="auto" />
-<p> Baloo et mowgli </p> 
-
+<font size=6> <p> Baloo et mowgli </p>  </font>
+ </div>
+ 
+<div class="pop" data-licence="disney">
 <img src= "Belle.jpg" alt= "img" height="500" width="auto" />
 <p> Belle </p> 
+</div>
 
+<div class="pop" data-licence="disney">
 <img src= "Belle (Diamond Glitter).jpg" alt= "img" height="500" width="auto" />
 <p> Belle (Diamond Glitter) </p> 
+</div>
 
+<div class="pop" data-licence="disney">
 <img src= "Bert.jpg" alt= "img" height="500" width="auto" />
 <p> Bert </p>
+</div>
 
+<div class="pop" data-licence="disney">
 <img src= "Blanche Neige.jpg" alt= "img" height="500" width="auto" />
 <p> Blanche Neige </p>
+</div>
 
+<div class="pop" data-licence="disney">
 <img src= "Bob Razowski.jpg" alt= "img" height="500" width="auto" />
 <p> Bob Razowski </p>
+</div>
 
-<img src= "Boba Fett 462.jpg" alt= "img" height="500" width="auto" />
-<p> Boba Fett 462 </p> 
 
-<img src= "Boba Fett 478.jpg" alt= "img" height="500" width="auto" />
-<p> Boba Fett 478 </p> 
+	<div class="pop" data-licence="star wars">
+	<img src= "Boba Fett 462.jpg" alt= "img" height="500" width="auto" />
+	<p> Boba Fett 462 </p> 
+	</div>
 
+	<div class="pop" data-licence="star wars">
+	<img src= "Boba Fett 478.jpg" alt= "img" height="500" width="auto" />
+	<p> Boba Fett 478 </p> 
+	</div>
+
+<div class="pop" data-licence="star wars">
 <img src= "Boba Fett 480.jpg" alt= "img" height="500" width="auto" />
 <p> Boba Fett 480 </p> 
+</div>
 
+<div class="pop" data-licence="star wars">
 <img src= "Boba Fett et Fennec.jpg" alt= "img" height="500" width="auto" />
 <p> Boba Fett & Fennec sur le trône </p>
+</div>
 
+<div class="pop" data-licence="disney">
 <img src= "Bouriquet.jpg" alt= "img" height="500" width="auto" />
 <p> Bouriquet </p>
+</div>
 
+<div class="pop" data-licence="rocks">
 <img src= "Britney Spears.jpg" alt= "img" height="500" width="auto" />
 <p> Britney Spears </p>
+</div>
 
 <img src= "Bruno.jpg" alt= "img" height="500" width="auto" />
 <p> Bruno </p> 
@@ -153,6 +182,9 @@
 <img src= "Évoli.jpg" alt= "img" height="500" width="auto" />
 <p> Évoli </p>
 
+<img src= "Évoli 10 inch.jpg" alt= "img" height="500" width="auto" />
+<p> Évoli (25cm) </p>
+
 <img src= "Falcon 700.jpg" alt= "img" height="500" width="auto" />
 <p> Falcon 700 </p>
 
@@ -195,6 +227,9 @@
 <img src= "Hedwige.jpg" alt= "img" height="500" width="auto" />
 <p> Hedwige </p>
 
+<img src= "Helena Shaw.jpg" alt= "img" height="500" width="auto" />
+<p> Helena Shaw </p>
+
 <img src= "Indiana Jones 1385.jpg" alt= "img" height="500" width="auto" />
 <p> Indiana Jones 1385 </p>
 
@@ -233,6 +268,12 @@
 
 <img src= "Katy.jpg" alt= "img" height="500" width="auto" />
 <p> Katy </p>
+
+<img src= "Kevin Richardson.jpg" alt= "img" height="500" width="auto" />
+<p> Kevin Richardson (Backstreet Boys) </p>
+
+<img src= "Kuzco.jpg" alt= "img" height="500" width="auto" />
+<p> Kuzco </p>
 
 <img src= "Kylo Ren.jpg" alt= "img" height="500" width="auto" />
 <p> Kylo Ren Suprême Leader </p>
@@ -294,6 +335,9 @@
 <img src= "Meilin.jpg" alt= "img" height="500" width="auto" />
 <p> Meilin Lee </p>
 
+<img src= "Mérida.jpg" alt= "img" height="500" width="auto" />
+<p> Mérida </p>
+
 <img src= "Michael Jackson.jpg" alt= "img" height="500" width="auto" />
 <p> Michael Jackson (Billie Jean) </p>
 
@@ -311,6 +355,9 @@
 
 <img src= "Mighty Thor.jpg" alt= "img" height="500" width="auto" />
 <p> Mighty Thor </p>
+
+<img src= "Minato.jpg" alt= "img" height="500" width="auto" />
+<p> Minato Namikaze </p>
 
 <img src= "Minnie.jpg" alt= "img" height="500" width="auto" />
 <p> Minnie Mouse </p>
@@ -381,6 +428,9 @@
 <img src= "Raphael.jpg" alt= "img" height="500" width="auto" />
 <p> Raphael </p>
 
+<img src= "Renslayer.jpg" alt= "img" height="500" width="auto" />
+<p> Ravonna Renslayer </p>
+
 <img src= "Raya.jpg" alt= "img" height="500" width="auto" />
 <p> Raya </p>
 
@@ -392,6 +442,9 @@
 
 <img src= "Reva.jpg" alt= "img" height="500" width="auto" />
 <p> Reva (Troisième sœur) </p>
+
+<img src= "Nohara.jpg" alt= "img" height="500" width="auto" />
+<p> Rin Nohara </p>
 
 <img src= "Rocket.jpg" alt= "img" height="500" width="auto" />
 <p> Rocket </p>
@@ -444,11 +497,17 @@
 <img src= "Stitch smiling.jpg" alt= "img" height="500" width="auto" />
 <p> Stitch (1045) </p>
 
+<img src= "Stitch Monstre.jpg" alt= "img" height="500" width="auto" />
+<p> Stitch Monstre </p>
+
 <img src= "Dr.Strange.jpg" alt= "img" height="500" width="auto" />
 <p> Strange Suprême </p>
 
 <img src= "Sully.jpg" alt= "img" height="500" width="auto" />
 <p> Sully </p>
+
+<img src= "Sylvie.jpg" alt= "img" height="500" width="auto" />
+<p> Sylvie 1314 </p>
 
 <img src= "Durith.jpg" alt= "img" height="500" width="auto" />
 <p> Tala Durith </p>
@@ -477,17 +536,25 @@
 <img src= "Vers.jpg" alt= "img" height="500" width="auto" />
 <p> Vers </p> 
 
+<div class="pop" data-licence="loki">
 <img src= "Timely.jpg" alt= "img" height="500" width="auto" />
 <p> Victor Timely (1893) </p>
+</div>
 
 <img src= "Wall-E.jpg" alt= "img" height="500" width="auto" />
 <p> Wall-E avec Extincteur </p> 
+
+<img src= "Whitney Houston 25.jpg" alt= "img" height="500" width="auto" />
+<p> Whitney Houston 25 </p> 
 
 <img src= "Whitney Houston 71.jpg" alt= "img" height="500" width="auto" />
 <p> Whitney Houston 71 </p> 
 
 <img src= "Whitney Houston 73.jpg" alt= "img" height="500" width="auto" />
 <p> Whitney Houston 73 </p> 
+
+<img src= "Winnie.jpg" alt= "img" height="500" width="auto" />
+<p> Winnie </p>
 
 <img src= "Yuga.jpg" alt= "img" height="500" width="auto" />
 <p> Yuga Aoyama </p> 
@@ -503,3 +570,23 @@
 <html>
 <p> Ma liste Amazon </p>
 </font>
+
+<script>
+  function filterPops(licence) {
+    const pops = document.querySelectorAll('.pop');
+    licence = licence.toLowerCase();
+
+    pops.forEach(pop => {
+      const currentLicence = pop.getAttribute('data-licence').toLowerCase();
+
+      if (licence === 'all' || currentLicence === licence) {
+        pop.style.display = 'block';
+      } else {
+        pop.style.display = 'none';
+      }
+    });
+  }
+</script>
+
+
+</body>
