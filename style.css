@@ -15,29 +15,36 @@ td {
 
 #filter-bar {
   display: flex;
+  flex-wrap: wrap; /* autorise retour à la ligne */
   width: 100%;
   gap: 10px;
 }
 
 #filter-bar button {
-  flex: 1; /* largeur égale pour tous */
+  flex: 1 1 calc(33.333% - 10px); /* 3 par ligne */
   height: 100px;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   border: none;
   cursor: pointer;
   text-shadow: 1px 1px 2px black;
-  transition: transform 0.2s;
-  background-repeat: no-repeat;
   border-radius: 8px;
+  transition: transform 0.2s;
 }
 
-#filter-bar button:hover {
-  transform: scale(1.05);
+/* Sur écrans étroits : 2 par ligne */
+@media (max-width: 600px) {
+  #filter-bar button {
+    flex: 1 1 calc(50% - 10px);
+    height: 80px;
+    font-size: 14px;
+  }
 }
+
 
 
 .pop {
