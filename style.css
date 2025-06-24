@@ -22,12 +22,12 @@ td {
 
 #filter-bar button {
   flex: 1 1 calc(33.333% - 10px); /* 3 par ligne */
-  height: 100px;
+  height: 200px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-  font-size: 16px;
+  font-size: 50px;
   font-weight: bold;
   border: none;
   cursor: pointer;
@@ -48,7 +48,7 @@ td {
 
 
 .pop {
-  display: block;
+  display: inline-block;
   margin: 20px 0;
 }
 
