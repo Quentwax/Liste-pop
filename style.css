@@ -14,14 +14,17 @@ td {
 }
 
 #filter-bar {
-  display: flex;
-  flex-wrap: wrap; /* autorise retour à la ligne */
-  width: 100%;
-  gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    padding: 0 16px;        /* mobile par défaut */
+    box-sizing: border-box;
 }
 
+
 #filter-bar button {
-  flex: 1 1 calc(33.333% - 10px); /* 3 par ligne */
+  flex: 1 1 calc(33.333% - 10px);
   height: 200px;
   background-size: cover;
   background-position: center;
@@ -33,8 +36,20 @@ td {
   cursor: pointer;
   text-shadow: 1px 1px 2px black;
   border-radius: 8px;
-  transition: transform 0.2s;
+  transition: transform 0.2s, filter 0.2s;
 }
+
+/* bouton actif (cliqué) */
+#filter-bar button.active {
+  filter: brightness(0.6);
+}
+
+/* effet au survol */
+#filter-bar button:hover {
+  transform: scale(1.01);
+  filter: brightness(0.85);
+}
+
 
 /* Sur écrans étroits : 2 par ligne */
 @media (max-width: 600px) {
@@ -63,3 +78,27 @@ td {
   justify-content: center;
   font-size : 300%;
 }
+
+#searchBar {
+    width: 70%;              /* moins large que les boutons */
+    max-width: 900px;        /* limite sur grands écrans */
+    min-width: 280px;        /* lisible sur petits écrans */
+
+    padding: 14px 18px;      /* proportionnel */
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    margin: 0 auto 20px;     /* centré */
+    display: block;
+
+    font-size: 20px;         /* cohérent avec boutons */
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 30px 0 40px;
+    color: #ffffff;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+

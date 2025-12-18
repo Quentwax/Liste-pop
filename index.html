@@ -6,24 +6,47 @@
 
 </div>
 
+<style>
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    background-image: url("Lorcanabackground.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+</style>
+
+
 <head>
 <link rel="stylesheet" href="style.css">
 
 <div id="main">
-   <font size=10> <p>Bienvenue sur la liste de mes Funko Pop </p> </font>
- </div>
+    <h1 class="title">Bienvenue sur la liste de mes Funko Pop</h1>
+</div>
+
 <body>
  
 <div id="filter-bar">
-  <button onclick="filterPops('all')">Tout</button>
-  <button onclick="filterPops('disney')" style="background-image: url('disney-logo.jpg')">Disney</button>
- <button onclick="filterPops('marvel')" style="background-image: url('Marvel-logo.jpg')">Marvel</button> 
- <button onclick="filterPops('star wars')" style="background-image: url('star-wars-logo.jpg')"></button>
-   <button onclick="filterPops('mha')"style="background-image: url('mha-logo.jpg')"></button>
-    <button onclick="filterPops('tv')"style="background-image: url('tv-logo.jpg')">Films / TV</button>
-  <button onclick="filterPops('rocks')"style="background-image: url('rocks-logo.jpg')">Chanteurs</button>
-  <button onclick="filterPops('games')"style="background-image: url('games-logo.jpg')">Games</button>
-  <button onclick="filterPops('other')"style="background-image: url('.jpg')">Autre</button>
+  <button onclick="filterPops('all', this)">Tout</button>
+  <button onclick="filterPops('disney', this)" style="background-image: url('disney-logo.jpg')">Disney</button>
+ <button onclick="filterPops('marvel', this)" style="background-image: url('Marvel-logo.jpg')">Marvel</buttonj> 
+ <button onclick="filterPops('star wars', this)" style="background-image: url('star-wars-logo.jpg')"></button>
+   <button onclick="filterPops('mha', this)"style="background-image: url('mha-logo.jpg')"></button>
+    <button onclick="filterPops('tv', this)"style="background-image: url('tv-logo.jpg')">Films / TV</button>
+  <button onclick="filterPops('rocks', this)"style="background-image: url('rocks-logo.jpg')">Chanteurs</button>
+  <button onclick="filterPops('games', this)"style="background-image: url('games-logo.jpg')">Games</button>
+  <button onclick="filterPops('other', this)"style="background-image: url('.jpg')">Autre</button>
+   
+<input 
+  type="text" 
+  id="searchBar" 
+  placeholder="Rechercher une Funko Pop..." 
+  onkeyup="filterSearch()"
+/>
+   
    
 </div>
 
@@ -31,187 +54,175 @@
 
 		<!-- Bloc 1-->
 		
-			<div class="pop" data-licence="marvel">
+			<div class="pop" data-licence="marvel" data-keywords="826">
 			<img src= "Agatha.jpg" alt= "img" height="500" width="auto" />
 			<font size=6> <p> Agatha Harkness </p> </font>
 			</div>
 		
-			<div class="pop" data-licence="marvel">
+			<div class="pop" data-licence="disney" data-keywords="1058">
 			<img src= "Alice.jpg" alt= "img" height="500" width="auto" />
 			<font size=6> <p> Alice </p> </font>
 			</div>
 		
-		<div class="pop" data-licence="marvel">
+		<div class="pop" data-licence="marvel" data-keywords="1031">
 			<img src= "America Chavez.jpg" alt= "img" height="500" width="auto" />
 			<font size=6> <p> America Chavez </p> </font>
 			</div>
 		
-		<div class="pop" data-licence="star wars" >
+		<div class="pop" data-licence="star wars" data-keywords="617">
 			<img src= "Amiral Ackbar.jpg" alt= "img" height="500" width="auto" /> 
 			<font size=6><p> Amiral Ackbar </p> </font>
 			</div>
 		
-			<div class="pop" data-licence="disney">
+			<div class="pop" data-licence="disney" data-keywords="1023">
 			<img src= "Anna.jpg" alt= "Anna" height="500" width="auto" />
 			<font size=6><p> Anna </p> </font>
 			</div>
 			
-				<div class="pop" data-licence="disney">
+				<div class="pop" data-licence="disney" data-keywords="1362">
 			<img src= "Ariel.jpg" alt= "Ariel" height="500" width="auto" />
 			<font size=6><p> Ariel </p> </font>
 			</div>
-			
-			<!-- Bloc 2-->
-			
-			
-			<!-- Bloc 3-->
-			
-			
-			<!-- Bloc 4-->
-			
-			
-			<!-- Bloc 5-->
-			<div class="pop" data-licence="disney">
+		
+			<div class="pop" data-licence="disney" data-keywords="1099">
 			<img src= "Arthur.jpg" alt= "img" height="500" width="auto" />
 			<font size=6> <p> Arthur </p>  </font>
 			</div>
 			
-			<div class="pop" data-licence="tv">
+			<div class="pop" data-licence="tv" data-keywords="1268">
 			<img src= "Arthur_Kaamelott.jpg" alt= "img" height="500" width="auto" />
 			<font size=6> <p> Arthur Kaamelott </p>  </font>
 			</div>
 			
 			<!-- Bloc 6-->
-			<div class="pop" data-licence="disney">
+			<div class="pop" data-licence="disney" data-keywords="1390">
 			<img src= "Asha.jpg" alt= "img" height="500" width="auto" />
 			<font size=6> <p> Asha </p>  </font>
 			</div>
 			
 			<!-- Bloc 7-->
-			<div class="pop" data-licence="disney">
+			<div class="pop" data-licence="disney" data-keywords="1011">
 			<img src= "Aurore 1011.jpg" alt= "img" height="500" width="auto" />
 			<font size=6> <p> Aurore 1011</p>  </font>
 			</div>
 			
-			<div class="pop" data-licence="disney">
+			<div class="pop" data-licence="disney" data-keywords="1454">
 			<img src= "Aurore.jpg" alt= "img" height="500" width="auto" />
 			<font size=6> <p> Aurore 1454</p>  </font>
 			</div>
 
-	<div class="pop" data-licence="disney">   
+	<div class="pop" data-licence="disney" data-keywords="29">   
 	<img src= "Aurore avec chateau.jpg" alt= "img" height="500" width="auto" />
 	<font size=6> <p> Aurore avec chateau </p> 
 	</div>
 
-<div class="pop" data-licence="disney">
+<div class="pop" data-licence="disney" data-keywords="1475">
 <img src= "Bagheera.jpg" alt= "img" height="500" width="auto" />
 <font size=6> <p> Bagheera </p>  </font>
  </div>
 
-<div class="pop" data-licence="disney">
+<div class="pop" data-licence="disney" data-keywords="1490">
 <img src= "Baloo et mowgli.jpg" alt= "img" height="500" width="auto" />
 <font size=6> <p> Baloo et mowgli </p>  </font>
  </div>
  
-<div class="pop" data-licence="disney">
+<div class="pop" data-licence="disney" data-keywords="1021">
 <img src= "Belle.jpg" alt= "img" height="500" width="auto" />
 <p> Belle </p> 
 </div>
 
-<div class="pop" data-licence="disney">
+<div class="pop" data-licence="disney" data-keywords="1137">
 <img src= "Belle 1137.jpg" alt= "img" height="500" width="auto" />
 <p> Belle (Diamond Glitter) </p> 
 </div>
 
-<div class="pop" data-licence="disney">
+<div class="pop" data-licence="disney" data-keywords="299">
 <img src= "Bert.jpg" alt= "img" height="500" width="auto" />
 <p> Bert </p>
 </div>
 
-<div class="pop" data-licence="disney">
+<div class="pop" data-licence="disney" data-keywords="339">
 <img src= "Blanche Neige.jpg" alt= "img" height="500" width="auto" />
 <p> Blanche Neige </p>
 </div>
 
-<div class="pop" data-licence="disney">
+<div class="pop" data-licence="disney" data-keywords="1526">
 <img src= "Blanche Neige 1526.jpg" alt= "img" height="500" width="auto" />
 <p> Blanche Neige Esquisse</p>
 </div>
 
 
-<div class="pop" data-licence="disney">
+<div class="pop" data-licence="disney" data-keywords="1155">
 <img src= "Bob Razowski.jpg" alt= "img" height="500" width="auto" />
 <p> Bob Razowski </p>
 </div>
 
-
-	<div class="pop" data-licence="star wars">
+	<div class="pop" data-licence="star wars" data-keywords="462">
 	<img src= "Boba fett 462.jpg" alt= "img" height="500" width="auto" />
 	<p> Boba Fett 462 </p> 
 	</div>
 
-	<div class="pop" data-licence="star wars">
+	<div class="pop" data-licence="star wars" data-keywords="478">
 	<img src= "Boba Fett 478.jpg" alt= "img" height="500" width="auto" />
 	<p> Boba Fett 478 </p> 
 	</div>
 
-<div class="pop" data-licence="star wars">
+<div class="pop" data-licence="star wars" data-keywords="480">
 <img src= "Boba Fett 480.jpg" alt= "img" height="500" width="auto" />
 <p> Boba Fett 480 </p> 
 </div>
 
-<div class="pop" data-licence="star wars">
+<div class="pop" data-licence="star wars" data-keywords="486">
 <img src= "Boba Fett et Fennec.jpg" alt= "img" height="500" width="auto" />
 <p> Boba Fett & Fennec sur le trône </p>
 </div>
 
-<div class="pop" data-licence="disney">
+<div class="pop" data-licence="disney" data-keywords="1170">
 <img src= "Bouriquet.jpg" alt= "img" height="500" width="auto" />
 <p> Bouriquet </p>
 </div>
 
-<div class="pop" data-licence="rocks">
+<div class="pop" data-licence="rocks" data-keywords="208">
 <img src= "Britney Spears.jpg" alt= "img" height="500" width="auto" />
 <p> Britney Spears </p>
 </div>
 
-<div class="pop" data-licence="marvel">
+<div class="pop" data-licence="marvel" data-keywords="1079">
 <img src= "Bruno.jpg" alt= "img" height="500" width="auto" />
 <p> Bruno </p> 
 </div>
 
-<div class="pop" data-licence="disney">
+<div class="pop" data-licence="disney" data-keywords="1210">
 <img src= "Buzz (XL-01).jpg" alt= "img" height="500" width="auto" />
 <p> Buzz L'éclair (XL-01) </p> 
 </div>
 
-<div class="pop" data-licence="disney">
+<div class="pop" data-licence="disney" data-keywords="1211">
 <img src= "Buzz (XL-15).jpg" alt= "img" height="500" width="auto" />
 <p> Buzz L'éclair (XL-15) </p> 
 </div>
 
-<div class="pop" data-licence="marvel">
+<div class="pop" data-licence="marvel" data-keywords="27">
 <img src= "Captain America 27.jpg" alt= "img" height="500" width="auto" />
 <p> Captain America 27 </p> 
 </div>
 
-<div class="pop" data-licence="marvel">
+<div class="pop" data-licence="marvel" data-keywords="61">
 <img src= "Captain America 61.jpg" alt= "img" height="500" width="auto" />
 <p> Captain America 61 </p> 
 </div>
 
-<div class="pop" data-licence="marvel">
+<div class="pop" data-licence="marvel" data-keywords="573">
 <img src= "Captain America 573.jpg" alt= "img" height="500" width="auto" />
 <p> Captain America 573 </p> 
 </div>
 
-
-<div class="pop" data-licence="marvel">
+<div class="pop" data-licence="marvel" data-keywords="968">
 <img src= "Captain Carter.jpg" alt= "img" height="500" width="auto" />
 <p> Captain Carter </p> 
 </div>
 
-<div class="pop" data-licence="marvel">
+<div class="pop" data-licence="marvel" data-keywords="576">
 <img src= "Captain Marvel.jpg" alt= "img" height="500" width="auto" />
 <p> Captain Marvel </p> 
 </div>
@@ -524,6 +535,11 @@
 <div class="pop" data-licence="disney">
 <img src= "Lumière.jpg" alt= "img" height="500" width="auto" />
 <p> Lumière </p>
+</div>
+
+<div class="pop" data-licence="games marvel">
+<img src= "Luna.jpg" alt= "img" height="500" width="auto" />
+<p> Luna Snow </p>
 </div>
 
 <div class="pop" data-licence="games">
@@ -976,7 +992,7 @@
 <p> Yzma </p>
 </div>
 
-<div class="pop" data-licence="disney">
+<div class="pop" data-licence="disney" data-keywords="516">
 <img src= "Zig Zag.jpg" alt= "img" height="500" width="auto" />
 <p> Zig Zag </p>
 </div>
@@ -989,21 +1005,53 @@
 </font>
  </font>
 <script>
-  function filterPops(licence) {
-    const pops = document.querySelectorAll('.pop');
-    licence = licence.toLowerCase();
+let currentLicence = "all";
+
+function filterPops(licence, btn) {
+    currentLicence = licence.toLowerCase(); // all fonctionne ici
+
+    // reset boutons
+    document.querySelectorAll("#filter-bar button")
+        .forEach(button => button.classList.remove("active"));
+
+    // active bouton cliqué
+    btn.classList.add("active");
+
+    applyFilters();
+}
+
+function filterSearch() {
+    applyFilters();
+}
+
+function applyFilters() {
+    const searchValue = document.getElementById("searchBar").value.toLowerCase();
+    const pops = document.querySelectorAll(".pop");
 
     pops.forEach(pop => {
-      const currentLicence = pop.getAttribute('data-licence').toLowerCase();
+        const visibleName = pop.querySelector("p").textContent.toLowerCase();
+const keywords = pop.getAttribute("data-keywords")?.toLowerCase() || "";
 
-      if (licence === 'all' || currentLicence === licence) {
-        pop.style.display = 'inline-block';
-      } else {
-        pop.style.display = 'none';
-      }
+const searchableText = visibleName + " " + keywords;
+
+        const popLicence = pop.getAttribute("data-licence").toLowerCase();
+
+const matchLicence =
+    currentLicence === "all" || popLicence.split(" ").includes(currentLicence);
+
+
+        const matchSearch = searchableText.includes(searchValue);
+
+
+        pop.style.display = (matchLicence && matchSearch)
+            ? "inline-block"
+            : "none";
     });
-  }
+}
 </script>
+
+
+
 </head>
 
 </body>
