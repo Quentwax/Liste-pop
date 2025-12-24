@@ -80,18 +80,33 @@ td {
 }
 
 #searchBar {
-    width: 70%;              /* moins large que les boutons */
-    max-width: 900px;        /* limite sur grands écrans */
-    min-width: 280px;        /* lisible sur petits écrans */
+  width: 80%;
+  max-width: 800px;
+  min-width: 320px;
 
-    padding: 14px 18px;      /* proportionnel */
-    border-radius: 10px;
-    border: 2px solid #ccc;
-    margin: 0 auto 20px;     /* centré */
-    display: block;
+  padding: 16px 20px;
+  border-radius: 12px;
+  border: 2px solid #ccc;
 
-    font-size: 20px;         /* cohérent avec boutons */
+  margin: 0 auto 24px;
+  display: block;
+
+  font-size: 20px;
 }
+
+@media (max-width: 768px) {
+  #searchBar {
+    width: 100%;
+    max-width: none;
+    min-width: unset;
+
+    padding: 18px 22px;
+    font-size: 22px;
+
+    border-radius: 14px;
+  }
+}
+
 
 .title {
     text-align: center;
